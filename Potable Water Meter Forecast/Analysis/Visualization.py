@@ -30,3 +30,5 @@ def visualize_installed_by_month(file_path): # Function to visualize the number 
     plt.title('Number of Meters Installed by Month')
     plt.tight_layout()
     plt.show()
+
+
