@@ -1,5 +1,12 @@
 import pandas as pd
 
+def total_billedwater(csv_path):
+    df = pd.read_csv(csv_path)
+    total_billed = df['BILLED METER CONSUMPTION'].sum()
+    print(f"Total Billed Meter Consumption: {total_billed}")
+    return total_billed
+
+
 
 def basic_analysis(csv_path):
     df = pd.read_csv(csv_path, parse_dates=['Date'])
