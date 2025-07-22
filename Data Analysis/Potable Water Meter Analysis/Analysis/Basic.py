@@ -6,6 +6,12 @@ def total_billedwater(csv_path):
     print(f"Total Billed Meter Consumption: {total_billed}")
     return total_billed
 
+def numberofuniqueaccounts(csv_path):
+    df = pd.read_csv(csv_path)
+    unique_accounts = df['ACCOUNT'].nunique()
+    print(f"Number of Unique Accounts: {unique_accounts}")
+    return unique_accounts
+
 
 
 def basic_analysis(csv_path):
@@ -58,7 +64,7 @@ def basic_analysis(csv_path):
 
     print(f"Total meters: {total_meters}")
 
-#def basic_total(csv_path):
+
     
 
 
